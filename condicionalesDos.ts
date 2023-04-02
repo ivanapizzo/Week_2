@@ -67,3 +67,5 @@ isEven(17);
 isEven(24);
 isEven(127);
 
+
+export {isEven};
