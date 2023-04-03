@@ -9,12 +9,14 @@ function evenNumbers(num) {
     }
 }
 evenNumbers(10);
+//saveMyWords = saveMyWords + myWords[i].length;
 function myRevert(myArr) {
-    var myArray1 = [];
+    var myArray1;
+    myArray1 = [];
     for (var i = myArr.length - 1; i >= 0; i--) {
-        myArray1.push[i];
+        myArray1.push(myArr[i]);
     }
-    return myArr;
+    console.log(myArray1);
 }
 myRevert([1, 2, 3, 4, 5]);
 function isRainbow(colors) {
@@ -30,11 +32,18 @@ function isRainbow(colors) {
 }
 isRainbow(["azul"]);
 isRainbow(["Celeste"]);
+// function add(myWords:string):number{
+//     for (let i=0; i < myWords.length; i++){
+//         myWords[i].length +1;
+//     } return myWords.length;
+// }
+// console.log(add("Estratósfera"));
 function add(myWords) {
+    var saveMyWords = 0;
     for (var i = 0; i < myWords.length; i++) {
-        myWords[i].length + 1;
+        saveMyWords = saveMyWords + myWords[i].length;
     }
-    return myWords.length;
+    return saveMyWords;
 }
 exports.add = add;
-console.log(add("Estratósfera"));
+console.log(add(["Estratósfera", "espacio", "planetas", "agujeros negros"]));

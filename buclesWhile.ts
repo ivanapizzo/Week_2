@@ -4,6 +4,8 @@ let encontrarPar = false;
 function hasEven (myNums:number[]) {
 
     let i = 0;
+    let arrPar = [];
+    
     while(i < myNums.length && !encontrarPar) {
 
         if (encontrarPar = (myNums[i] % 2 == 0)){

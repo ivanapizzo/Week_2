@@ -12,19 +12,23 @@ function evenNumbers(num){
 
 evenNumbers(10);
 
+//saveMyWords = saveMyWords + myWords[i].length;
+
 
 function myRevert(myArr:number[]){
 
-    let myArray1 = [];
+    let myArray1;
+    myArray1 = [];
 
     for (let i =  myArr.length - 1; i >= 0; i--){
         
-        myArray1.push[i];
+        myArray1.push(myArr[i]);
     } 
-        return myArr;
+        console.log(myArray1);
 }
 
 myRevert([1, 2, 3, 4, 5]);
+
 
 
 
@@ -49,15 +53,35 @@ isRainbow(["Celeste"]);
 
 
 
-function add(myWords:string):number{
+// function add(myWords:string):number{
+    
+//     for (let i=0; i < myWords.length; i++){
+
+//         myWords[i].length +1;
+
+//     } return myWords.length;
+// }
+
+// console.log(add("Estratósfera"));
+
+
+
+
+
+function add(myWords:string[]):number{
+
+    let saveMyWords:number = 0;
     
     for (let i=0; i < myWords.length; i++){
 
-        myWords[i].length +1;
+        saveMyWords = saveMyWords + myWords[i].length;
 
-    } return myWords.length;
+    } return saveMyWords;
 }
 
-console.log(add("Estratósfera"));
+console.log(add(["Estratósfera", "espacio", "planetas", "agujeros negros"]));
+
+
+
 
 export {add};

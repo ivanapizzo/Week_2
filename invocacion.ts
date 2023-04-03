@@ -16,3 +16,7 @@ let contarArr1 = isEven(arr1);
 console.log(contarArr1);
 
 console.log(isEven(arr1));
+
+
+
+//falta retos invocación + revisar function add(MyWords) + function myReverse (ambos en Bucle For) + function hasEven bucle While
