@@ -32,12 +32,6 @@ function isRainbow(colors) {
 }
 isRainbow(["azul"]);
 isRainbow(["Celeste"]);
-// function add(myWords:string):number{
-//     for (let i=0; i < myWords.length; i++){
-//         myWords[i].length +1;
-//     } return myWords.length;
-// }
-// console.log(add("Estratósfera"));
 function add(myWords) {
     var saveMyWords = 0;
     for (var i = 0; i < myWords.length; i++) {

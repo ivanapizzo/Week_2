@@ -53,21 +53,6 @@ isRainbow(["Celeste"]);
 
 
 
-// function add(myWords:string):number{
-    
-//     for (let i=0; i < myWords.length; i++){
-
-//         myWords[i].length +1;
-
-//     } return myWords.length;
-// }
-
-// console.log(add("Estratósfera"));
-
-
-
-
-
 function add(myWords:string[]):number{
 
     let saveMyWords:number = 0;
