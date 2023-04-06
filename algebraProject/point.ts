@@ -63,6 +63,37 @@ class Point {
         
         return Math.sqrt(firstPoint * firstPoint + secondPoint * secondPoint);
     }
+
+    calcularQuadrant():number {
+
+        let cuadrante;
+
+        for (let i = 0; i <= 4; i ++){
+
+            if(this.x == 0 || this.y == 0){
+
+                return 0;
+            } else if (this.x > 0 && this.y > 0) {
+    
+                return 1;
+    
+            } else if (this.x < 0 && this.y > 0){
+    
+                return 2;
+    
+            } else if (this.x < 0 && this.y < 0) {
+    
+                return 3;
+    
+            } else if (this.x > 0 && this.y < 0){
+    
+                return 4;
+            }
+
+        } 
+        return cuadrante;
+    }   
+
 }
 
 

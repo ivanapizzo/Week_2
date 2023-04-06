@@ -20,6 +20,9 @@ console.log(myPoint.toString(36.7213, 4.4213));
 console.log(myPoint.distanceToIOrigin());
 console.log(myPoint.calculateDistance(pointAndres));
 
+console.log(myPoint.calcularQuadrant());
+console.log(pointAndres.calcularQuadrant());
+
 
 
 // Naples/Coordinates
