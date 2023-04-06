@@ -27,20 +27,14 @@ var Point = /** @class */ (function () {
     Point.prototype.distanceToIOrigin = function () {
         var lon1 = this.x;
         var lat1 = this.y;
-        // Coordenada al origen (0,0)
-        var lon2 = 0;
-        var lat2 = 0;
-        var firstPoint = (lon1 - lon2);
-        var secondPoint = (lat1 - lat2);
-        return Math.sqrt(firstPoint * firstPoint + secondPoint * secondPoint);
+        var firstPoint = (lon1 - 0);
+        var secondPoint = (lat1 - 0);
+        var distanceO = Math.sqrt(firstPoint * firstPoint + secondPoint * secondPoint);
+        return distanceO;
     };
     Point.prototype.calculateDistance = function (anotherPoint) {
-        var lon1 = this.x;
-        var lat1 = this.y;
-        var lon2 = 0;
-        var lat2 = 0;
-        var firstPoint = (lon1 - lon2);
-        var secondPoint = (lat1 - lat2);
+        var firstPoint = this.x - anotherPoint.x;
+        var secondPoint = this.y - anotherPoint.y;
         return Math.sqrt(firstPoint * firstPoint + secondPoint * secondPoint);
     };
     return Point;
