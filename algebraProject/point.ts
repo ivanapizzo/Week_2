@@ -21,25 +21,25 @@ class Point {
         return this.y;
     }
     
-    setX():number{
+    setX(x:number):number{
 
-        this.x = this.x;
+        this.x = x;
 
-        return this.x;
+        return x;
     }
 
-    setY():number{
+    setY(y:number):number{
 
         this.y = this.y;
 
-        return this.y;
+        return y;
+
     }
 
-    toString(x:number, y:number) {
+    toString(): string{
 
-        (x + y).toString();
 
-        return "Longitud y latitud";
+        return `Longitud: ${this.x} y Latitud: ${this.y}`;
     }
 
     distanceToIOrigin():number {
@@ -94,8 +94,18 @@ class Point {
         return cuadrante;
     }   
 
-}
 
+    calculateNearest(Points:Point[]) {
+
+        let arrPoint:Point[] = [];
+
+        //for (i = 0; i < Points.length; i++)
+
+
+        
+    }
+
+}
 
 export {Point}
 

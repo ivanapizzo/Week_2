@@ -12,17 +12,16 @@ var Point = /** @class */ (function () {
     Point.prototype.getY = function () {
         return this.y;
     };
-    Point.prototype.setX = function () {
-        this.x = this.x;
-        return this.x;
+    Point.prototype.setX = function (x) {
+        this.x = x;
+        return x;
     };
-    Point.prototype.setY = function () {
+    Point.prototype.setY = function (y) {
         this.y = this.y;
-        return this.y;
+        return y;
     };
-    Point.prototype.toString = function (x, y) {
-        (x + y).toString();
-        return "Longitud y latitud";
+    Point.prototype.toString = function () {
+        return "Longitud: ".concat(this.x, " y Latitud: ").concat(this.y);
     };
     Point.prototype.distanceToIOrigin = function () {
         var lon1 = this.x;
@@ -57,6 +56,10 @@ var Point = /** @class */ (function () {
             }
         }
         return cuadrante;
+    };
+    Point.prototype.calculateNearest = function (Points) {
+        var arrPoint = [];
+        //for (i = 0; i < Points.length; i++)
     };
     return Point;
 }());
